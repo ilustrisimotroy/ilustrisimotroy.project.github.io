@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', arial;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+img {
+    width: 100%;
+}
+
+.nav-container {
+    background: #252b34;
+    border-bottom: 3px solid #e75921;
+    width: 100%;
+    height: 80px;
+
+
+    a {
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    padding-top: 1.6em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+    nav {
+        float: right;
+
+        .menu-btn {
+            color: black;
+            
+        }
+
+        ul {
+            display: none;
+
+            a {
+                display: block;
+                padding: 0 1em;
+            }
+        }
+    }
+}
+
+.hero {
+    background: url("../images/bg5.png") no-repeat center fixed;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 5em;
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: -1em;
+    }
+
+    p {
+        margin: .15em;
+        font-size: 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 12px 20px 12px 20px;
+        border: 2px solid #e75921;
+        border-radius: 6px;
+    }
+
+    a:hover {
+        background-color: #e75921;
+        color: white;
+    }
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured {
+    position: relative;
+}
+// .featured::before {
+//     content: "";
+//     position: absolute;
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 50%;
+//     background-color: #21dae794;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+// }
+
+
+.featured-title {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    margin-top: -.4em;
+    display: block;
+}
+
+
+.border {
+    width: 60%;
+    height: 5px;
+    background-color: #e75921;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.featured-desc {
+    color: #1f1f1f;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+
+
+.courses {
+    background: #a1f2eb;
+
+
+        .border {
+            width: 60%;
+            height: 5px;
+            background-color: #e75921;
+            margin: 30px auto;
+            margin-bottom: 4em;
+            text-align: center;
+        }
+    
+    .card-1 {
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+
+        img {
+            border-radius: 1em;
+        }
+
+        h1 {
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: .50em;
+        }
+
+        .desc {
+            padding-bottom: 1em;
+            font-weight: 500;
+        }
+
+        a {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px 10px 20px;
+            border-radius: 6px;
+            border: 2px solid #e75921;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border-radius: 0 16px 16px 16px;
+        }
+
+        a:hover {
+            background: #e75921;
+        }
+    }
+}
+
+.courses-container ul li {
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.teachers {
+    padding: 40px;
+    background: #1f1f1f;
+    color: #434343;
+    text-align: center;
+
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        letter-spacing: .60em;
+        margin-left: 23px;
+    }
+
+    .border {
+        width: 60%;
+        height: 5px;
+        background-color: #e75921;
+        margin: 30px auto;
+        margin-bottom: 4em;
+        text-align: center;
+    }
+
+
+    .card-1 {
+        background-color: #fff;
+        padding: 30px;
+        height: auto;
+        border-radius: 2em;
+
+        img {
+            width: 120px;
+            height: 125px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            margin-bottom: 20px;
+            color: #e75921;
+        }
+    }
+
+    .card-2 {
+        background-color: #fff;
+        padding: 30px;
+        height: auto;
+        border-radius: 2em;
+
+        img {
+            width: 120px;
+            height: 125px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            margin-bottom: 20px;
+            color: #e75921;
+        }
+    }
+
+    .card-3 {
+        background-color: #fff;
+        padding: 30px;
+        height: auto;
+        border-radius: 2em;
+
+        img {
+            width: 120px;
+            height: 125px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            margin-bottom: 20px;
+            color: #e75921;
+        }
+    }
+
+    .card-4 {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 2em;
+
+        img {
+            width: 120px;
+            height: 125px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            margin-bottom: 20px;
+            color: #e75921;
+        }
+    }
+}
+
+.teachers ul li {
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+
+.instructors {
+    background: #f7f7f7;
+
+    h1 {
+        font-size: 3.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        margin-bottom: -.80em;
+    }
+
+    .instructor-name {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .instructor-desc {
+        margin-left: 1em;
+        
+    }
+}
+
+.instructors-container a img {
+    border-radius: 1em;
+    margin-bottom: 2em;
+    width: 18em;
+    height: 20em;
+}
+
+.FAQ {
+    background: rgb(255, 255, 255);
+    color: #000;
+
+    h1 {
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        letter-spacing: .40em;
+        margin-left: 23px;
+    }
+
+    .question1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .question2 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 991px) {
+
+    .hero .content {
+        padding-top: 6em;
+    }
+
+
+    .featured, .instructors {
+        text-align: left;
+    }
+
+    .featured .featured-title {
+        font-size: 2em;
+        padding-right: -10em;
+
+    }
+
+    .featured, .instructors-container {
+        display: grid;
+        grid-template-columns: 30% auto;
+    }
+
+    .featured .featured-desc {
+        font-size: 16px;
+    }
+
+    .left, .instructors-left {
+        display: grid;
+        place-content: center;
+    }
+
+    .featured .right {
+        width: 38em;
+        margin-left: 5em;
+        margin-top: -2em;
+    }
+
+    .courses {
+        // margin-top: -5em;
+        // margin-bottom: -7em;
+        padding: 2em;
+        height: 40em;
+    }
+
+    .courses-container ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 2em;
+        margin: 2em;
+        text-align: left;
+
+        .card-1 {
+            
+            padding: 3px;
+
+            a {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    .teachers ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1em;
+        margin: 2em;
+    }
+
+
+
+    .instructors {
+        padding-top: 7em;
+
+        .instructor-desc {
+            margin-right: -13em;
+        }
+    }
+
+    .instructors-container img {
+        float: right;
+        margin-top: 4em;
+    }
+
+    .FAQ ul{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 5em;
+        margin: 2em;
+    }
+}
+
+
+
+// @media only screen and (min-width: 1050px) {
+
+//     .hero .content{
+//         margin-top: 10em;
+
+//         h1 {
+//             font-size: 40px;
+//         }
+//     }
+    
+    
+//     .featured .left{
+//         padding-top: -15em;
+//     }
+    
+    
+//     .featured img {
+//         float: right;
+//         max-width: 800px;
+//     }
+
+//     .instructors img {
+//         float: right;
+//         max-width: 500px;
+//     }
+// }
+
+
+@media only screen and (min-width: 1250px) {
+
+
+    .featured, .instructors {
+        text-align: left;
+    }
+
+
+    .featured .right {
+        width: 38em;
+        margin-left: 5em;
+        margin-top: -2em;
+    }
+
+    .instructors {
+        padding-top: 7em;
+
+        .instructor-desc {
+            margin-right: -20em;
+        }
+    }
+
+        .hero .content{
+            margin-top: -2em;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+        
+    section {
+        padding: 4em 10em 4em 10em;
+    }
+
+    .hero .content {
+        padding: 6em 8em 6em 10em;
+    }
+
+}
+
+
+@media only screen and (min-width: 1550px) {
+    
+    .featured, .instructors {
+        text-align: left;
+    }
+
+    .featured .featured-title {
+        font-size: 2.6em;
+    }
+
+    .featured .right {
+        width: 38em;
+        margin-left: 35em;
+        margin-top: -2em;
+    }
+
+    .instructors {
+        padding-top: 7em;
+
+        .instructor-desc {
+            margin-right: -20em;
+        }
+    }
+
+        .hero .content{
+            margin-top: -2em;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+        
+    section {
+        padding: 4em 10em 4em 10em;
+    }
+
+    .hero .content {
+        padding: 6em 8em 6em 10em;
+    }
+
+}
+
